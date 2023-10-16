@@ -10,7 +10,7 @@ public class DBUtil {
     private static final String PERSISTENCE_UNIT_NAME = "message_board";
     private static EntityManagerFactory emf;
 
-    //新しいアプリケーション管理のEntityManagerを作成する
+    //データベース接続するEntityManagerオブジェクトを作成する
     public static EntityManager createEntityManager() {
         return getEntityManagerFactory().createEntityManager();
     }
